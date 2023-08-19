@@ -12,4 +12,4 @@ RUN unzip branding.zip
 RUN cp -rvf branding/* .
 RUN rm -rf branding branding.zip
 EXPOSE 80
-CMD [“/usr/sbin/httpd”, “run”]
+CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
